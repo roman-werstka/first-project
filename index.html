@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
+    <title>Анкета</title>
 </head>
+
 <body>
-    
+    <div class="content"></div>
+    <script>
+        const contentEl = document.querySelector('.content');
+        const h2El = document.createElement('h2');
+        const pEl = document.createElement('p');
+
+        h2El.textContent = 'Название статьи';
+        pEl.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ut eius nisi nostrum beatae illum, accusantium odit. Exercitationem maiores inventore id, temporibus soluta, vero corrupti eum perferendis eos, aperiam quidem?';
+
+        contentEl.append(h2El, pEl);
+    </script>
+    <script src="index4.js"></script>
 </body>
+
 </html>

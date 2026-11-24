@@ -12,3 +12,12 @@ function processUserInput(callback) {
 };
 
 processUserInput(greeting);
+
+const btnEl = document.querySelector(".myButton");
+const descrEl = document.querySelector(".counter");
+let number = 0;
+
+btnEl.onclick = function () {
+    number++;
+    descrEl.textContent = `Счётчик: ${number}`;
+};
